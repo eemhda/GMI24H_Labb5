@@ -31,8 +31,8 @@ internal class Program
 
         //Since the methods in the Sorter and Searcher classes are not static, you need to create an object of each class
         //in order to call the methods which consist your algorithms.
-        Sorter sorter = new Sorter();
-        Searcher searcher = new Searcher();
+        Sorter sorter = new();
+        Searcher searcher = new();
 
         // The BubbleSort method of the Sorter class is not yet implemented,
         // the method call below is just for reference on how you
