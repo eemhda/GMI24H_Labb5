@@ -37,13 +37,21 @@ internal class Program
         // The BubbleSort method of the Sorter class is not yet implemented,
         // the method call below is just for reference on how you
         //can call the method and pass the sample data provided in the MyData class.
-        sorter.BubbleSort(data.RandomNumSmallSmallRange); // <-- implement the methods from ISorter in the Sorter class in order to use them...
+        int[] myArray = data.RandomNumSmallSmallRange; //initializing array that we want to sort. Note that we create and assign this prior to the method call, and there is a reason for this. Do you know why? :)
+        sorter.BubbleSort(myArray); // <-- implement the methods from ISorter in the Sorter class in order to use them and passing the previously initialized array as an argument to the sorting method we want to test...
 
         //To be able to measure how long it takes to run an algorithm, you can use
         //The Stopwatch and the TimeSpan classes.
-        Stopwatch sw = Stopwatch.StartNew();
-        //HINT: this is an appropriate place to run your algorithm.
-        sw.Stop();
-        TimeSpan elapsedTime = sw.Elapsed; //HINT: perhaps might be a good idea to do something with this...
+
+        for(int i = 0; i < 10; i++)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            //HINT: this is an appropriate place to run your algorithm.
+          
+            sw.Stop();
+            TimeSpan elapsedTime = sw.Elapsed; //HINT: perhaps might be a good idea to do something with this...
+            
+        }
+        
     }
 }
